@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SQLitePlugin\"><param name=\"ios-package\" value=\"SQLitePlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "uk.co.smarteditors.local_storage"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "uk.co.smarteditors.local_storage"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "uk.co.smarteditors.local_storage"
+        },
+        "io.litehelpers.cordova.sqlite": {
+            "PACKAGE_NAME": "uk.co.smarteditors.local_storage"
+        }
+    },
+    "dependent_plugins": {}
+}

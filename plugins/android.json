@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SQLitePlugin\"><param name=\"android-package\" value=\"io.liteglue.SQLitePlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "uk.co.smarteditors.local_storage"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "uk.co.smarteditors.local_storage"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "uk.co.smarteditors.local_storage"
+        },
+        "io.litehelpers.cordova.sqlite": {
+            "PACKAGE_NAME": "uk.co.smarteditors.local_storage"
+        }
+    },
+    "dependent_plugins": {}
+}
